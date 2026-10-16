@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoloOS — The AI team that runs your one-person company</title>
+  <meta name="description" content="Six autonomous AI agents — CEO, sales, marketing, support, finance, ops — plan and act on your business 24/7. You approve what ships." />
+  <meta property="og:title" content="SoloOS — Run a company of one. Operate like a team of ten." />
+  <meta property="og:description" content="Autonomous AI agents that run your back office while you build. Every outbound action waits for your approval." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◎</text></svg>" />
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top">◎&nbsp;Solo<span>OS</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#how">How it works</a>
+        <a href="#team">AI team</a>
+        <a href="#demo">Product</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn ghost" href="#demo">Watch demo</a>
+        <a class="btn primary" href="#cta">Launch free</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <div class="hero-glow g1"></div>
+      <div class="hero-glow g2"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="pulse"></span> Autonomous agents · 6 roles · runs 24/7</span>
+          <h1>Run a company of one.<br /><span class="grad">Operate like a team of ten.</span></h1>
+          <p class="lede">
+            SoloOS gives you six autonomous AI agents — <strong>CEO, sales, marketing, support,
+            finance, ops</strong> — that read your business every day, plan the work, and execute it
+            with real tools. You wake up to a briefing, not a to-do list. Every outbound action
+            waits for your approval.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary lg" href="#cta">Launch your AI team <span class="arr">→</span></a>
+            <a class="btn ghost lg" href="#demo">See the product ↓</a>
+          </div>
+          <ul class="trust-row">
+            <li>✓ 2-minute setup</li>
+            <li>✓ No credit card</li>
+            <li>✓ You approve every send</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal d1">
+          <div class="glass-card">
+            <div class="feed-head">
+              <span class="live-dot"></span>
+              <span>Live agent activity</span>
+              <span class="mono dim">acme-solar</span>
+            </div>
+            <ul class="feed" id="heroFeed" aria-live="polite"></ul>
+            <div class="feed-foot">
+              <span class="tag blue">6 agents online</span>
+              <span class="tag yellow"><span id="pendingCount">3</span> awaiting approval</span>
+              <span class="tag green">0 sent without you</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="statbar reveal d2">
+        <div class="stat"><span class="stat-v">6</span><span class="stat-l">specialist agents, pre-wired</span></div>
+        <div class="stat"><span class="stat-v">24/7</span><span class="stat-l">scheduled runs, zero supervision</span></div>
+        <div class="stat"><span class="stat-v">100%</span><span class="stat-l">of outbound gated by your OK</span></div>
+        <div class="stat"><span class="stat-v">&lt;2 min</span><span class="stat-l">from signup to first briefing</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROBLEM ══════════ -->
+    <section class="section" id="problem">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">The reality</span>
+          <h2>Wearing every hat is killing your growth.</h2>
+          <p class="sec-sub">You didn't start a company to answer invoice reminders and triage tickets all day.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card-ico">📥</div>
+            <h3>The inbox never ends</h3>
+            <p>Support pings, follow-ups, reminders — the work that pays you keeps losing to the work that doesn't.</p>
+          </article>
+          <article class="card reveal d1">
+            <div class="card-ico">🧊</div>
+            <h3>Leads go cold while you build</h3>
+            <p>The prospect who downloaded your pricing PDF three days ago has already hired someone else.</p>
+          </article>
+          <article class="card reveal d2">
+            <div class="card-ico">⏳</div>
+            <h3>Admin steals your best hours</h3>
+            <p>Invoices, scheduling, triage, reports. Founders spend the majority of the week on work a $0 agent could do.</p>
+          </article>
+        </div>
+        <p class="punch reveal">What if the unglamorous <strong>60%</strong> just… happened — on schedule, in your voice,
+          with you approving only what ships?</p>
+      </div>
+    </section>
+
+    <!-- ══════════ HOW IT WORKS ══════════ -->
+    <section class="section alt" id="how">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps. Then it runs itself.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-n">01</span>
+            <h3>Describe your company</h3>
+            <p>Name, industry, this quarter's goals. Two minutes in the browser — no config files, no engineering, no onboarding call.</p>
+          </div>
+          <div class="step-arrow reveal">→</div>
+          <div class="step reveal d1">
+            <span class="step-n">02</span>
+            <h3>The CEO delegates</h3>
+            <p>Every morning your CEO agent reads the pipeline, inbox and books — then assigns concrete tasks to sales, marketing, support, finance and ops. They execute with real tools.</p>
+          </div>
+          <div class="step-arrow reveal d1">→</div>
+          <div class="step reveal d2">
+            <span class="step-n">03</span>
+            <h3>You approve what ships</h3>
+            <p>Agents draft everything outward-facing. You wake up to a briefing, a filled approval queue, and a board that maintained itself overnight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ AI TEAM ══════════ -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">The AI team</span>
+          <h2>Meet the team you'll never have to hire.</h2>
+          <p class="sec-sub">Six specialists, each with its own schedule, tools, and memory. Toggle any of them off with one click.</p>
+        </div>
+        <div class="grid-3 team-grid">
+          <article class="card agent-card reveal">
+            <div class="agent-top"><span class="agent-ico">🎯</span><span class="tag blue">Daily · 08:00</span></div>
+            <h3>CEO Orchestrator</h3>
+            <p class="agent-desc">Reviews every metric each morning, writes your briefing, and assigns the day's work to the right agent.</p>
+            <div class="chips"><span class="chip">briefing</span><span class="chip">delegation</span><span class="chip">priorities</span></div>
+          </article>
+          <article class="card agent-card reveal d1">
+            <div class="agent-top"><span class="agent-ico">💼</span><span class="tag blue">Every 2h</span></div>
+            <h3>Sales &amp; Pipeline</h3>
+            <p class="agent-desc">Follows up with new leads, advances deals, and drafts personalized outreach you can send in one click.</p>
+            <div class="chips"><span class="chip">CRM</span><span class="chip">follow-ups</span><span class="chip">outreach</span></div>
+          </article>
+          <article class="card agent-card reveal d2">
+            <div class="agent-top"><span class="agent-ico">📣</span><span class="tag blue">Daily · 09:00</span></div>
+            <h3>Marketing &amp; Content</h3>
+            <p class="agent-desc">Plans your calendar and drafts posts grounded in what's actually happening in your business — not generic filler.</p>
+            <div class="chips"><span class="chip">content</span><span class="chip">calendar</span><span class="chip">campaigns</span></div>
+          </article>
+          <article class="card agent-card reveal">
+            <div class="agent-top"><span class="agent-ico">🎧</span><span class="tag blue">Every 30m</span></div>
+            <h3>Customer Support</h3>
+            <p class="agent-desc">Triages tickets, drafts replies in your voice, escalates what matters — response time you'd never keep up with alone.</p>
+            <div class="chips"><span class="chip">inbox</span><span class="chip">replies</span><span class="chip">escalation</span></div>
+          </article>
+          <article class="card agent-card reveal d1">
+            <div class="agent-top"><span class="agent-ico">💰</span><span class="tag blue">Weekly + due dates</span></div>
+            <h3>Finance &amp; Invoicing</h3>
+            <p class="agent-desc">Sends invoice reminders for approval, tracks what's outstanding, and flags the numbers that look wrong.</p>
+            <div class="chips"><span class="chip">invoices</span><span class="chip">reminders</span><span class="chip">runway</span></div>
+          </article>
+          <article class="card agent-card reveal d2">
+            <div class="agent-top"><span class="agent-ico">⚙️</span><span class="tag blue">Daily · 07:30</span></div>
+            <h3>Ops &amp; Admin</h3>
+            <p class="agent-desc">Keeps the task board honest: closes done work, rewrites vague tasks into next actions, surfaces blockers.</p>
+            <div class="chips"><span class="chip">tasks</span><span class="chip">process</span><span class="chip">blockers</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PRODUCT DEMO ══════════ -->
+    <section class="section alt" id="demo">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">The product</span>
+          <h2>See it work — not a slide deck.</h2>
+          <p class="sec-sub">The actual interface, on sample data. Click through it: the morning briefing, live run traces, the approval queue.</p>
+        </div>
+
+        <div class="browser reveal">
+          <div class="browser-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="url mono">app.soloos.dev/command-center</span>
+            <span class="tag green browser-live"><span class="live-dot"></span> live</span>
+          </div>
+
+          <div class="browser-body">
+            <aside class="app-side">
+              <div class="app-brand">◎ Solo<span>OS</span></div>
+              <div class="app-co">Acme Solar</div>
+              <a class="app-nav active" href="#demo">◈ Command Center</a>
+              <a class="app-nav" href="#demo">🤖 AI Team</a>
+              <a class="app-nav" href="#demo">📡 Runs <span class="mini-badge">2</span></a>
+              <a class="app-nav" href="#demo">📥 Approvals <span class="mini-badge warn">3</span></a>
+              <a class="app-nav" href="#demo">💼 CRM</a>
+              <a class="app-nav" href="#demo">🎧 Support</a>
+              <a class="app-nav" href="#demo">🧾 Invoices</a>
+              <a class="app-nav" href="#demo">✍️ Content</a>
+              <a class="app-nav" href="#demo">☑ Tasks</a>
+              <div class="app-foot mono">◉ opencode brain</div>
+            </aside>
+
+            <div class="app-main">
+              <div class="app-top">
+                <strong id="appTitle">Command Center</strong>
+                <span class="mono dim">Acme Solar · B2B solar installation</span>
+                <span class="sp"></span>
+                <span class="tag blue"><span class="live-dot"></span> <span id="workingCount">2</span> agents working</span>
+                <span class="btn-sm primary">▶ Run company</span>
+              </div>
+
+              <div class="app-tabs" role="tablist">
+                <button class="app-tab active" data-tab="cc" role="tab">Command Center</button>
+                <button class="app-tab" data-tab="runs" role="tab">Live runs</button>
+                <button class="app-tab" data-tab="appr" role="tab">Approvals <span class="mini-badge warn">3</span></button>
+              </div>
+
+              <!-- Command Center panel -->
+              <div class="app-panel active" id="panel-cc">
+                <div class="metrics">
+                  <div class="metric"><span class="m-l">Pipeline</span><span class="m-v" data-count="87000" data-prefix="$">$0</span><span class="m-d up">3 active leads</span></div>
+                  <div class="metric"><span class="m-l">Outstanding</span><span class="m-v" data-count="8200" data-prefix="$">$0</span><span class="m-d warn">1 invoice sent</span></div>
+                  <div class="metric"><span class="m-l">Open tickets</span><span class="m-v" data-count="2">0</span><span class="m-d">drafts in queue</span></div>
+                  <div class="metric"><span class="m-l">Runs today</span><span class="m-v" data-count="7">0</span><span class="m-d up">on schedule</span></div>
+                </div>
+                <div class="brief">
+                  <div class="brief-h">🩺 Company pulse <span class="tag yellow">3 approvals waiting</span></div>
+                  <p id="typewriter" class="tw"></p>
+                  <div class="brief-cta">
+                    <span class="btn-sm primary">▶ Run company now</span>
+                    <span class="btn-sm">View runs</span>
+                    <span class="btn-sm">Inbox (3)</span>
+                  </div>
+                </div>
+                <div class="mini-feed">
+                  <div class="mini-feed-h">Recent runs</div>
+                  <div class="mrow"><span>💼 sales</span><span class="tag green">completed</span><span class="dim">2 follow-ups queued · drafted outreach</span><span class="mono dim">12m ago</span></div>
+                  <div class="mrow"><span>🎧 support</span><span class="tag blue">running</span><span class="dim">drafting reply to Dana Reyes…</span><span class="mono dim">now</span></div>
+                  <div class="mrow"><span>💰 finance</span><span class="tag green">completed</span><span class="dim">reminder drafted for INV-1041</span><span class="mono dim">1h ago</span></div>
+                </div>
+              </div>
+
+              <!-- Live runs panel -->
+              <div class="app-panel" id="panel-runs">
+                <div class="run-cols">
+                  <div class="run-list">
+                    <div class="rl-item active"><strong>🎧 support</strong><span class="tag blue">running</span><span class="dim">Draft replies for approval</span></div>
+                    <div class="rl-item"><strong>💼 sales</strong><span class="tag green">completed</span><span class="dim">Follow-ups + outreach draft</span></div>
+                    <div class="rl-item"><strong>🎯 ceo</strong><span class="tag green">completed</span><span class="dim">Briefing · delegated 4 tasks</span></div>
+                    <div class="rl-item"><strong>⚙️ ops</strong><span class="tag yellow">queued</span><span class="dim">Review task board</span></div>
+                  </div>
+                  <div class="run-log mono" id="runLog" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <!-- Approvals panel -->
+              <div class="app-panel" id="panel-appr">
+                <div class="appr-card" id="apprCard">
+                  <div class="appr-kind">email_send · from support run</div>
+                  <div class="appr-title">Reply to Dana Reyes — “Panel output lower than expected”</div>
+                  <div class="appr-body">Hi Dana, thanks for flagging this — you're right that June production came in under the estimate. I've pulled your inverter logs and we'll have a full answer within 24h, including a fix if the string is underperforming. — Acme Solar Support</div>
+                  <div class="appr-actions">
+                    <span class="btn-sm primary" id="apprApprove">✓ Approve &amp; send</span>
+                    <span class="btn-sm danger" id="apprReject">✗ Reject</span>
+                    <span class="mono dim">never auto-sends</span>
+                  </div>
+                </div>
+                <div class="appr-card dim-card">
+                  <div class="appr-kind">email_send · from finance run</div>
+                  <div class="appr-title">Payment reminder: INV-1041 — Wolf Brew</div>
+                  <div class="appr-body">Hi Wolf Brew team, just a friendly reminder that invoice INV-1041 ($8,200) is outstanding. Thanks!</div>
+                </div>
+                <div class="appr-card dim-card">
+                  <div class="appr-kind">content_publish · from marketing run</div>
+                  <div class="appr-title">Publish to LinkedIn: “How Wolf Brew cut energy costs 38%”</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <p class="demo-note reveal">Interactive prototype · sample data. The production product connects <em>your</em> model and tools.</p>
+      </div>
+    </section>
+
+    <!-- ══════════ SAFETY ══════════ -->
+    <section class="section" id="safety">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Control</span>
+          <h2>Autonomous. Not reckless.</h2>
+          <p class="sec-sub">Agents move fast inside your rules — nothing leaves the building without you.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="card-ico">🛡️</div>
+            <h3>Approvals by default</h3>
+            <p>Emails, invoices, and posts never send themselves. They queue in your inbox until you click approve — one tap, from anywhere.</p>
+          </article>
+          <article class="card reveal d1">
+            <div class="card-ico">🧾</div>
+            <h3>Every action, logged</h3>
+            <p>Each run records every tool call, token, and decision. Scrub back three days and see exactly what happened and why.</p>
+          </article>
+          <article class="card reveal d2">
+            <div class="card-ico">⏸️</div>
+            <h3>Pause anyone, anytime</h3>
+            <p>Toggle an agent off mid-schedule. Cancel a running task with one click. You hold the kill switch, always.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FEATURES ══════════ -->
+    <section class="section alt" id="features">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Under the hood</span>
+          <h2>Batteries included.</h2>
+        </div>
+        <div class="grid-4 feat-grid">
+          <article class="card feat reveal"><h3>⏱ Cron scheduling</h3><p>Every agent runs on its own schedule. Edit a cron line, forget it.</p></article>
+          <article class="card feat reveal d1"><h3>🧰 20+ company tools</h3><p>CRM, tickets, invoices, content, tasks — agents act on real data, not chat.</p></article>
+          <article class="card feat reveal d2"><h3>🤝 Human-in-the-loop</h3><p>Outbound actions queue for your approval. One click to send.</p></article>
+          <article class="card feat reveal d3"><h3>📡 Live run traces</h3><p>Watch every step, tool call and token stream in real time.</p></article>
+          <article class="card feat reveal"><h3>🔁 Two runtimes</h3><p>Mock mode for demos. Your production model in one toggle.</p></article>
+          <article class="card feat reveal d1"><h3>📜 Full audit log</h3><p>Every action, approval and run — timestamped and searchable.</p></article>
+          <article class="card feat reveal d2"><h3>🧠 Bring your model</h3><p>Runs on the model stack you already have. No lock-in, no re-platform.</p></article>
+          <article class="card feat reveal d3"><h3>🗂 CEO delegation</h3><p>One goal each morning; a whole org moving by afternoon.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PRICING ══════════ -->
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Pricing</span>
+          <h2>Start free. Scale when it pays for itself.</h2>
+        </div>
+        <div class="grid-3 price-grid">
+          <article class="card price reveal">
+            <h3>Starter</h3>
+            <div class="price-v">$0<span>/mo</span></div>
+            <p class="price-d">For getting to know your team.</p>
+            <ul>
+              <li>✓ 1 company, 6 agents</li>
+              <li>✓ Daily scheduled runs</li>
+              <li>✓ Approval inbox</li>
+              <li>✓ Community support</li>
+            </ul>
+            <a class="btn ghost full" href="#cta">Start free</a>
+          </article>
+          <article class="card price pop reveal d1">
+            <span class="pop-tag">MOST POPULAR</span>
+            <h3>Operator</h3>
+            <div class="price-v">$29<span>/mo</span></div>
+            <p class="price-d">For running on autopilot.</p>
+            <ul>
+              <li>✓ Everything in Starter</li>
+              <li>✓ Custom schedules per agent</li>
+              <li>✓ Bring your own model</li>
+              <li>✓ Run history &amp; export</li>
+              <li>✓ Email support</li>
+            </ul>
+            <a class="btn primary full" href="#cta">Start 14-day trial</a>
+          </article>
+          <article class="card price reveal d2">
+            <h3>Studio</h3>
+            <div class="price-v">$79<span>/mo</span></div>
+            <p class="price-d">For multi-project operators.</p>
+            <ul>
+              <li>✓ Everything in Operator</li>
+              <li>✓ 3 companies</li>
+              <li>✓ Custom agents</li>
+              <li>✓ Team approvals</li>
+              <li>✓ API access</li>
+            </ul>
+            <a class="btn ghost full" href="#cta">Talk to us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FAQ ══════════ -->
+    <section class="section alt" id="faq">
+      <div class="wrap narrow">
+        <div class="sec-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+        </div>
+        <div class="faq reveal">
+          <details open>
+            <summary>Is it actually autonomous?</summary>
+            <p>Yes — agents wake on schedule, read live company data, and act with real tools. The one exception is deliberate: anything that goes <em>outward</em> (emails, invoices, posts) queues for your approval. Autonomy where it saves time, you where it matters.</p>
+          </details>
+          <details>
+            <summary>What does it connect to?</summary>
+            <p>Out of the box it runs a complete in-app company database — CRM, support tickets, invoices, content, tasks, calendar — and agents act on it through a tool layer (MCP). Adapters for email and calendar providers plug into the same approval queue as they're enabled.</p>
+          </details>
+          <details>
+            <summary>Do I need to know how to code?</summary>
+            <p>No. Setup is a form: your company, your goals, your schedule. If you can write an email, you can run SoloOS.</p>
+          </details>
+          <details>
+            <summary>Which AI model does it use?</summary>
+            <p>It runs on the model stack you already have — bring your key, pick your provider, swap anytime. There is also a built-in mock runtime for demos and testing that needs no key at all.</p>
+          </details>
+          <details>
+            <summary>What happens while I'm asleep?</summary>
+            <p>Agents run on their schedules, draft everything, and file it for the morning: replies drafted, reminders ready, content queued. You start the day approving, not catching up.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FINAL CTA ══════════ -->
+    <section class="final" id="cta">
+      <div class="final-glow"></div>
+      <div class="wrap narrow reveal">
+        <h2>The busywork can start<br />running itself tomorrow.</h2>
+        <p>Hire your AI team in two minutes. Keep the approval button in your pocket.</p>
+        <div class="cta-row center">
+          <a class="btn primary lg" href="#top">Launch SoloOS free <span class="arr">→</span></a>
+          <a class="btn ghost lg" href="#demo">Replay the demo</a>
+        </div>
+        <p class="trust center">No credit card · 2-minute setup · Cancel anytime</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="#top">◎&nbsp;Solo<span>OS</span></a>
+        <p class="foot-blurb">The AI team for founders who'd rather ship than admin.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#how">How it works</a>
+        <a href="#team">AI team</a>
+        <a href="#demo">Demo</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#problem">Why SoloOS</a>
+        <a href="#safety">Safety</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta">Contact</a>
+      </div>
+      <div>
+        <h4>Get started</h4>
+        <a href="#cta">Launch free</a>
+        <a href="#demo">Watch demo</a>
+        <a href="#pricing">Plans</a>
+      </div>
+    </div>
+    <div class="wrap foot-bottom">
+      <span>© <span id="yr">2026</span> SoloOS · Built for founders who'd rather ship than admin.</span>
+      <span class="mono dim">Interactive product prototype — sample data</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
